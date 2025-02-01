@@ -330,6 +330,12 @@
 </head>
 <body>
     <script>
+               window.onload = function() {
+      let newTitle = prompt("Enter a title for this webpage:");
+      if (newTitle) {
+        document.title = newTitle;
+      }
+    };
         let username = prompt("Please enter your username:") || "Guest";
         
         let suggestions = [];
